@@ -7,16 +7,10 @@ public class S3Main1 {
 
 		System.out.println(StaticTest.num);
 
+		StaticTest t2 = new StaticTest();
+
 		StaticTest.staticMethod();
 
-		StaticTest staticTest = new StaticTest();
-		System.out.println(staticTest.num2);
-		System.out.println(staticTest.num);
-
-		staticTest.num = 4000;
-		System.out.println(staticTest.num);
-		
-		System.out.println(StaticTest.num);
 	}
 
 }

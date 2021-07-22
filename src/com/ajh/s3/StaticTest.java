@@ -10,6 +10,18 @@ public class StaticTest {
 
 	public static void staticMethod() {
 		System.out.println("Static Method");
+		System.out.println(StaticTest.num);
+//		System.out.println(this.num2);
+//		this.instanceMethod();
+	}
+
+	public void instanceMethod() {
+		System.out.println("Instance Method");
+		System.out.println(StaticTest.num);
+		System.out.println(this.num2);
+		//this() -> 생성자를 호출
+		//참조변수명.메서드명(0;
+		StaticTest.staticMethod();
 	}
 
 }
